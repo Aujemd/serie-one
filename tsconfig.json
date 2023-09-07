@@ -2,11 +2,12 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "skipLibCheck": true,
   },
   "files": ["src/n5-serie-one.tsx"],
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"],
+  "exclude": ["src/**/*.test*", "node_modules/*"],
   "baseUrl": "./src",
   "types": ["node", "jest", "@testing-library/jest-dom"]
 }
